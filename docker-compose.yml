@@ -2,14 +2,12 @@ version: "3.9"
 
 services:
   backend:
-    build: ./backend
-    container_name: ml-backend
+    image: harshithdocker12/ml-app-backend
     ports:
       - "5000:5000"
 
   frontend:
-    build: ./frontend
-    container_name: ml-frontend
+    image: harshithdocker12/ml-app-frontend
     ports:
       - "80:80"
     depends_on:
